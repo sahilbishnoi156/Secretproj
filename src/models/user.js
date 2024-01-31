@@ -3,13 +3,13 @@ const { ObjectId } = mongoose.Schema.Types;
 
 const UserSchema = new mongoose.Schema(
   {
-    // username: {
-    //   type: String,
-    //   unique: [true, "Username already exists!"],
-    //   required: [true, "Username is required!"],
-    //   lowercase: true,
-    //   trim: true,
-    // },
+    username: {
+      type: String,
+      unique: [true, "Username already exists!"],
+      required: [true, "Username is required!"],
+      lowercase: true,
+      trim: true,
+    },
     email: {
       type: String,
       unique: [true, "Email already exists!"],
